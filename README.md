@@ -8,7 +8,7 @@ Migrations are by default applied in order of that they're sorted in ```migratio
 
 ## Install
 ```bash
-pip install https://github.com/vane/asyncpg-migrate
+pip install https://github.com/vane/asyncpg-migrate/archive/0.0.1.tar.gz
 ```
 ## Usage
 
