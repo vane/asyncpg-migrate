@@ -4,7 +4,7 @@ asyncpg-migrate
 ## Description
 
 Simple database migration tool inspired by ``` knex.js```.  
-Migrations are by default applied in order of that they're sorted in ```migrations``` directory 
+Migrations are by default applied in order of timestamp inside ```migrations``` directory 
 
 ## Install
 ```bash
