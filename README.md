@@ -1,4 +1,4 @@
-asyncpg_migrate
+asyncpg-migrate
 ====
   
 ## Description
@@ -8,18 +8,18 @@ Migrations are by default applied in order of that they're sorted in ```migratio
 
 ## Install
 ```bash
-pip install asyncpg_migrate
+pip install asyncpg-migrate
 ```
 ## Usage
 
 #### Display help
 ```
-asyncpg_migrate -h
+asyncpg-migrate -h
 ```
 
 #### Add migration
 ```
-asyncpg_migrate -a 'test migration'
+asyncpg-migrate -a 'test migration'
 ```
 migration will be added to migrations/${timestamp}_test_migration.py 
 with following template
@@ -40,22 +40,22 @@ async def down(config):
 
 #### List migrations
 ```
-asyncpg_migrate -l
+asyncpg-migrate -l
 ``` 
 
 #### Apply all migrations
 ```
-asyncpg_migrate -m
+asyncpg-migrate -m
 ```
 
 #### Apply specific migration
 ```
-asyncpg_migrate -m migrations/migration_file.py
+asyncpg-migrate -m migrations/migration_file.py
 ```
 
 #### Custom config -- different then conf/db.yaml (optional)
 ```
-asyncpg_migrate -c conf/some.config.yaml
+asyncpg-migrate -c conf/some.config.yaml
 ```
 
 example config
@@ -70,7 +70,7 @@ db:
 
 #### Custom migration directory (optional)
 ```
-asyncpg_migrate -d /opt/my-migrations
+asyncpg-migrate -d /opt/my-migrations
 ```
 
 #### Using environment variables instead of configuration file
