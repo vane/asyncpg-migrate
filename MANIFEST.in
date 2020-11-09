@@ -1,0 +1,1 @@
+include asyncpg_migrate/conf/db.yaml
