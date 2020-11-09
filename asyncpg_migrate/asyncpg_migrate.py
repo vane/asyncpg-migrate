@@ -187,7 +187,16 @@ def main(args: argparse.Namespace):
     """Main migration method"""
     # check if files exists
     if args.config and not os.path.exists(args.config):
-        print_error(f'Path --config {args.config} not exists')
+        path_err = f'''Path --config {args.config} not exists
+for example:
+db:
+  host: 127.0.0.1
+  port: 5432
+  user: postgres
+  password: postgres
+  database: asyncpg-migate-test
+'''
+        print_error(path_err)
         return
     if args.directory and not os.path.exists(args.directory):
         print_error(f'Directory --directory {args.directory} not exists')
