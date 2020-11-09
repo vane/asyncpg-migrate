@@ -53,6 +53,11 @@ asyncpg-migrate -m
 asyncpg-migrate -m migrations/migration_file.py
 ```
 
+#### Rollback migration
+```
+asyncpg-migrate -r migrations/migration_file.py
+```
+
 #### Custom config -- different then conf/db.yaml (optional)
 ```
 asyncpg-migrate -c conf/some.config.yaml
