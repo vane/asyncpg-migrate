@@ -15,7 +15,7 @@ class MigrateConfig:
             self._conf = yaml.safe_load(data)
             # validate config
             if not 'db' in self._conf:
-                raise RuntimeError('Missing aiopg parameter in config')
+                raise RuntimeError('Missing asyncpg parameter in config')
             return True
         raise RuntimeError(f'Failed to read config from file : {fname}')
 
