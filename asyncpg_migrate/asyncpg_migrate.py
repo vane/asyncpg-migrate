@@ -13,9 +13,11 @@ migration_template = """#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import asyncpg
 
+
 async def up(config):
     conn: asyncpg.Connection = await asyncpg.connect(**config)
     pass
+
 
 async def down(config):
     conn: asyncpg.Connection = await asyncpg.connect(**config)
