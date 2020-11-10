@@ -29,9 +29,11 @@ with following template
 # -*- coding: utf-8 -*-
 import asyncpg
 
+
 async def up(config):
     conn: asyncpg.Connection = await asyncpg.connect(**config)
     pass
+
 
 async def down(config):
     conn: asyncpg.Connection = await asyncpg.connect(**config)
